@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+         body{
+           background-color:#bfebff;
+            }
+
+        .post{
+            border-radius: 8px;
+            background-color: #fae3a2;
+            width: 50%;
+            display: block;
+            margin: auto;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            height: fit-content;
+        }
+
+        a{
+        color:black
+        }
+
+    </style>
+</head>
+
+</html>
+
+
+<table>
+        <theader>
+            <tr>
+                <th>Id</th>
+                <th>Descripcion</th>
+                <th>Contenido</th>
+            </tr>
+        </theader>
+        <tbody>
+            {% for entry in blog_entries %}
+            <tr>
+                <td><a href="/home/entry/{{entry['_id']}}">{{entry['_id']}}</a></td>
+                <td>{{entry.descripcion}}</td>
+                <td>{{entry.contenido}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>

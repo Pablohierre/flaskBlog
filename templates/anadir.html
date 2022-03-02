@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nueva entrada</title>
+</head>
+<style>
+    body{
+       background-color:#bfebff;
+    }
+    .formulario{
+            border-radius: 8px;
+            background-color: #fae3a2;
+            width: 50%;
+            display: block;
+            margin: auto;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            height: fit-content;
+            margin-bottom: 15px;
+            padding-top:10px;
+        }
+    .formcontent{
+    display:block;
+    margin:auto;
+    text-align:center;
+    }
+</style>
+<body>
+
+    <div class="formulario">
+       <div class="formcontent">
+        <form method="post">
+            <p>
+                <input type="text" name="descripcion" placeholder="Título"/>
+            </p>
+
+            <p>
+            <textarea name="contenido" placeholder="Contenido", rows="5", cols="100"></textarea>
+            </p>
+            <p>
+                <input type="submit"/>
+            </p>
+        </form>
+       </div>
+    </div>
+
+</body>
+</html>

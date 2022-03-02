@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <style>
+         body{
+           background-color:#bfebff;
+            }
+
+        .post{
+            border-radius: 8px;
+            background-color: #fae3a2;
+            width: 50%;
+            display: block;
+            margin: auto;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            height: fit-content;
+            margin-bottom: 15px;
+        }
+
+        .info{
+        display: flow-root;
+        }
+
+        a{
+        color:black
+        }
+
+        button{
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    </style>
+</head>
+<body>
+<div class="post">
+            <div class="info">
+                <p style="float:left">username:{{entry.username}} </p>
+                <p style="float:right">posted on:{{entry.fecha}}</p>
+            </div>
+            <h2><a href="/home/entry/{{entry['_id']}}">{{entry.descripcion}}</a></h2>
+            <p>{{entry.contenido}}</p>
+        </div>
+</body>
+</html>
